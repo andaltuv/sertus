@@ -1,6 +1,7 @@
 import Sequelize from 'sequelize';
 import sequelize from '../database/database';
 import Client from './ClientModel';
+import Heater from './HeaterModel';
 
 const Service = sequelize.define('service',{
     id: {
@@ -40,5 +41,8 @@ const Service = sequelize.define('service',{
 
 Client.hasMany(Service);
 Service.belongsTo(Client);
+
+Service.hasMany(Heater);
+Heater.belongsTo(Service);
 
 export default Service;

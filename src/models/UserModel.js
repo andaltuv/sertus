@@ -17,6 +17,8 @@ const User = sequelize.define('user',{
         type: Sequelize.STRING,
     }
 
+},{
+    paraonid:true
 });
 
 export default User;

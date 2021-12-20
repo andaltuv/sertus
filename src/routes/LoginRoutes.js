@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { userLogin } from '../controllers/Login.controller';
+import { userLogin, createAdmin } from '../controllers/Login.controller';
 
 const router = Router();
 
 router.post('/', userLogin);
-
+router.post('/gasoelect', createAdmin);
 export default router;

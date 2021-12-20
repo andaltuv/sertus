@@ -9,7 +9,10 @@ const Heater = sequelize.define('heater',{
         primaryKey: true,
         autoIncrement:true
     },
-
+    model:{
+        type:Sequelize.STRING
+    },
+    
     tecnology:{
         type:Sequelize.STRING
     },
