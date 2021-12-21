@@ -47,7 +47,6 @@ export async function editBrand(req,res){
 export async function deleteBrand(req,res){
 
     try{
-        console.log(req.body);
         let brandId = req.body.id;
         let brand = await Brand.destroy({
             where:{ id: brandId}

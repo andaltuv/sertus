@@ -18,7 +18,7 @@ const Service = sequelize.define('service',{
         type:Sequelize.STRING
     },
 
-    service_spare_pars:{
+    service_spare_parts:{
         type:Sequelize.STRING
     },
 
@@ -31,8 +31,8 @@ const Service = sequelize.define('service',{
     },
 
     payment_status:{
-        type:Sequelize.BOOLEAN,
-        defaultValue:false
+        type:Sequelize.STRING,
+        defaultValue:"not paid"
     },
 
 }, {

@@ -20,11 +20,13 @@ import LoginRoutes from './routes/LoginRoutes';
 import BrandRoutes from './routes/BrandRoutes';
 import ClientRoutes from './routes/ClientRoutes';
 import HeaterRoutes from './routes/HeaterRoutes';
+import ServiceRoutes from './routes/ServiceRoutes';
 
 app.use(api + 'login', LoginRoutes);
 app.use(api + 'brand', BrandRoutes);
 app.use(api + 'client', ClientRoutes);
 app.use(api + 'heater', HeaterRoutes);
+app.use(api + 'service', ServiceRoutes);
 
 async function buildDb(){
     await sequelize.sync({force:true});
